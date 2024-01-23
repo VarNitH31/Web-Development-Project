@@ -1,0 +1,84 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100vh;
+}
+
+body{
+    overflow-x: hidden;
+    height: 100%;
+}
+
+
+h2{
+    margin: 30px;
+    font-weight: 300;
+    color: black;
+}
+
+.cartlist{
+    width: 100%;
+   
+    margin: 20px;
+    inset: 0px auto 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.cartlist .item img{
+    width: 300px;
+
+}
+
+.itemdisplay{
+    gap: 12px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cartlist .item{
+    
+    text-align: center;
+    margin: 20px;
+    width: 100%;
+    padding: 10px;
+    height: fit-content;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.cartlist .quantity span{
+
+   text-align: center;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+}
+
+.cartlist .plus,.minus{
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+}
+.cartlist .plus:hover,.minus:hover{
+    cursor: pointer;
+}
+
+
+
+
+.footer{
+    position: fixed;
+    bottom: 0%;
+}
