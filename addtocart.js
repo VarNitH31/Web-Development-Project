@@ -8,6 +8,13 @@ let products = [];
 let cart = [];
 
 
+const emptycart=()=>{
+    if (cart.length==0) {
+        listCartHTML.innerHTML = '<div class="empty-cart">Your cart is empty</div>';
+    }
+}
+emptycart();
+
 // iconCart.addEventListener('click', () => {
 //     body.classList.toggle('showCart');
 // })
@@ -42,6 +49,7 @@ let cart = [];
     //     }
     // })
 const addToCart = (product_id) => {
+    window.alert("Product added to cart");
     let positionThisProductInCart = cart.findIndex((value) => value.product_id == product_id);
     if(cart.length <= 0){
         cart = [{
@@ -63,7 +71,6 @@ const addCartToMemory = () => {
     localStorage.setItem('cart', JSON.stringify(cart));
 }
 const addCartToHTML = () => {
-    console.log("running")
     listCartHTML.innerHTML = '';
     let totalQuantity = 0;
     if(cart.length > 0){
@@ -89,6 +96,7 @@ const addCartToHTML = () => {
             </div>`;
         })
     }
+    emptycart();
   
 }
 
@@ -122,6 +130,7 @@ const changeQuantityCart = (product_id, type) => {
                 break;
         }
     }
+    emptycart();
     addCartToHTML();
     addCartToMemory();
 }
@@ -142,6 +151,22 @@ const initApp = () => {
     })
 }
 initApp();
+
+let clearCartButton = document.querySelector('.clearCartbtn');
+
+clearCartButton.addEventListener('click', () => {
+    clearCart();
+    window.alert("Cart Cleared")
+    if (cart.length==0) {
+        listCartHTML.innerHTML = '<div class="empty-cart">Your cart is empty</div>';
+    }
+});
+
+const clearCart = () => {
+    cart = []; // Clear the cart array
+    addCartToHTML(); // Update the cart display
+    addCartToMemory(); // Save the updated cart to local storage
+};
 
 
 if (localStorage.getItem('triggerButtonClick')) {

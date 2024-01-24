@@ -3,11 +3,71 @@ const pages = [
     { name: "About", url: "about.html" },
     { name: "Contact", url: "contact.html" },
     { name: "Asus zephrus", url: "/productpages/asuszephurs.html" },
-    { name: "Asus zephrus1", url: "/productpages/asuszephurs.html" },
-    { name: "Asus zephrus2", url: "/productpages/asuszephurs.html" },
-    { name: "Asus zephrus3", url: "/productpages/asuszephurs.html" },
-    { name: "Asus zephrus4", url: "/productpages/asuszephurs.html" },
-    { name: "Asus zephrus5", url: "/productpages/asuszephurs.html" },
+    {
+        name:"Iphone 14",
+        url: "/productpages/iphone14.html"
+    },
+    {
+
+        name:"Oneplus 11R 5G",
+        url: "/productpages/oneplus11r.html"
+
+    },
+    {
+  
+        name:"Galaxy Z Fold 4",
+        url: "/productpages/galaxyZfold.html"
+
+    },
+
+    {
+
+        name:"Pavillion x360",
+        url: "/productpages/pavillionx360.html"
+
+    },
+    {
+
+        name:"Dell Alienware M15",
+        url: "/productpages/dellalienware.html"
+
+    },
+    {
+
+        name:"Macbook air M2",
+        url: "/productpages/macbook.html"
+
+    },
+    {
+
+        name:"Boat rockerz 450",
+        url: "/productpages/boatheadphones.html"
+
+    },
+    {
+
+        name:"zebronics thunderbolt",
+        url: "/productpages/zebronics.html"
+
+    },
+    {
+
+        name:"Noise buds vs104",
+        url: "/productpages/noise.html"
+
+    },
+    {
+
+        name:"Pebble Cosmos prime",
+        url: "/productpages/pebble.html"
+
+    },
+    {
+
+        name:"Fastrack FS1 pro",
+        url: "/productpages/fastrack.html"
+
+    }
     // Add more pages as needed
 ];
 

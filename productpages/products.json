@@ -7,45 +7,68 @@
     },
     {
         "id": 2,
-        "name":" LD02 LOUNGE CHAIR",
-        "price": 250,
-        "image": "image/2.png"
+        "name":"Oneplus 11R 5G",
+        "price": 39999,
+        "image": "https://m.media-amazon.com/images/I/613SAOPmLeL._AC_UY327_FMwebp_QL65_.jpg"
     },
     {
         "id": 3,
-        "name":" LD03 LOUNGE CHAIR",
-        "price": 290,
-        "image": "image/3.png"
+        "name":"Galaxy Z Fold 4",
+        "price": 129999,
+        "image": "https://m.media-amazon.com/images/I/714QNdK8BWL._AC_UY327_FMwebp_QL65_.jpg"
     },
     {
         "id": 4,
-        "name":" ASUS Zephrus",
+        "name":"ASUS Zephrus",
         "price": 149999,
         "image": "https://m.media-amazon.com/images/I/81m-xYfxznL._AC_UY327_FMwebp_QL65_.jpg"
     },
     {
         "id": 5,
-        "name":" LD05 LOUNGE CHAIR",
-        "price": 300,
-        "image": "image/5.png"
+        "name":"Pavillion x360",
+        "price": 57900,
+        "image": "https://m.media-amazon.com/images/I/61yI6BW+wbL._AC_UY327_FMwebp_QL65_.jpg"
     },
     {
         "id": 6,
-        "name":" LD06 LOUNGE CHAIR",
-        "price": 200,
-        "image": "image/6.png"
+        "name":"Dell Alienware M15",
+        "price": 249999,
+        "image": "https://m.media-amazon.com/images/I/51dooiy0IvL._AC_UY327_FMwebp_QL65_.jpg"
     },
     {
         "id": 7,
-        "name":" LD07 LOUNGE CHAIR",
-        "price": 200,
-        "image": "image/7.png"
+        "name":"Macbook air M2",
+        "price": 114999,
+        "image": "https://m.media-amazon.com/images/I/71f5Eu5lJSL._AC_UY327_FMwebp_QL65_.jpg"
     },
     {
         "id": 8,
-        "name":" LD08 LOUNGE CHAIR",
-        "price": 200,
-        "image": "image/8.png"
+        "name":"Boat rockerz 450",
+        "price":1599,
+        "image": "https://m.media-amazon.com/images/I/51xxA+6E+xL._AC_UY327_FMwebp_QL65_.jpg"
+    },
+    {
+        "id": 9,
+        "name":"zebronics thunderbolt",
+        "price":799,
+        "image": "https://m.media-amazon.com/images/I/61smYWXWx9L._AC_UY327_FMwebp_QL65_.jpg"
+    },
+    {
+        "id": 10,
+        "name":"Noise buds vs104",
+        "price":1799,
+        "image": "https://m.media-amazon.com/images/I/51apXDsv2CL._AC_UY327_FMwebp_QL65_.jpg"
+    },
+    {
+        "id":11,
+        "name":"Pebble Cosmos prime",
+        "price":3899,
+        "image": "https://m.media-amazon.com/images/I/61Jayni-kPL._AC_UY327_FMwebp_QL65_.jpg"
+    },
+    {
+        "id":12,
+        "name":"Fastrack FS1 pro",
+        "price":2799,
+        "image": "https://m.media-amazon.com/images/I/61Jayni-kPL._AC_UY327_FMwebp_QL65_.jpg"
     }
-
 ]

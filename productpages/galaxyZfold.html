@@ -9,12 +9,13 @@
 <body>
     <div class="container">
         <div class="nav">
+            <div class="logo">
+                <span class="icon">
+                    <ion-icon name="logo-venmo"></ion-icon>
+                </span>
+            </div>
         <h2 class="ecom">E-COMMERCE</h2>
-        <div class="logo">
-            <span class="icon">
-                <ion-icon name="logo-venmo"></ion-icon>
-            </span>
-        </div>
+        
         <div class="box">
             <div class="icon2">
                 <ion-icon name="search"></ion-icon>
@@ -22,11 +23,15 @@
             <input type="text" name="">
         </div>  
         <nav class="navigation">
-            <a href="/homepage.html">Home</a>
-            <a href="/homepage.html#productgallery">Products</a>
-            <a href="/About.html">About</a>
-            <a href="/contact.html">Contact</a>
-            <span><a class="btnlogin-popup" href="/signup.html">Login</a></span>
+         <div>  <a href="/homepage.html">Home</a></div> 
+         <div> <a href="/homepage.html#productgallery">Products</a></div> 
+         <div><a href="/About.html">About</a></div> 
+         <div><a href="/contact.html">Contact</a></div> 
+            <a class="btnlogin-popup" href="signup.html">Login</a>
+            <div class="iconcart">
+               <a href="/cartpage.html"> <ion-icon name="cart-outline"></ion-icon></a>
+            </div>
+            
         </nav>
     </div>
     <div class="small-container">
@@ -42,11 +47,26 @@
                 </h3><br>
                 <h4>&#8377 1,29,999</h4><br>
                 <input type="number" value="1">
-                <a href="" class="btn">ADD TO CART</a><br><br>
+                <button id="addtocart" onclick="addToCart(3)">ADD TO CART</button><br><br>
                 <h5>Product details</h5><br>
                 <p><b>Brand</b>- Samsung<br><b>Model Name</b> - Samsung Galaxy Z Fold4 <br><b>Screen Size</b>- 6.2 inches<br><b>Colour</b>- Gold<br><b>Cellular Technology</b>- 5G<br><b>OS</b>- Android 12.0</p>
             </div>
         </div>
+    </div>
+    <h2  id="cartheading">Shopping Cart</h2>
+    <div class="cartlist">
+        <!-- <div class="item">
+            <div class="itemdisplay">
+        <img src="https://m.media-amazon.com/images/I/81m-xYfxznL._AC_UY327_FMwebp_QL65_.jpg" alt="">
+        <div class="cartname">asuszephurs</div>
+    </div>
+        <div class="cartprice">&#8377 1,49,999</div>
+        <div class="quantity">
+            <span class="minus"><</span>
+            <span>1</span>
+            <span class="plus">></span>
+        </div>
+        </div> -->
     </div>
     <!--Footer-->
     <div class="footer">
@@ -83,6 +103,7 @@
             </div>
         </div>
     </div>
+    <script src="/addtocart.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

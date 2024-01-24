@@ -97,6 +97,27 @@ h2{
     cursor: pointer;
 }
 
+.clearCart{
+    display: flex;
+    margin: 50px;
+    align-content: center;
+    justify-content: right;
+
+}
+
+.clearCart button{
+    width: max-content;
+    border: transparent;
+    padding: 10px 15px 10px 15px;
+    background-color: blue;
+    color: white;
+    outline: none;
+    border-radius: 20px;
+}
+
+.clearCart button:hover{
+    background-color: rgb(42, 42, 239);
+}
 
 
 
