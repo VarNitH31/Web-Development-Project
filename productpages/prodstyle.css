@@ -18,27 +18,34 @@ html{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 .row{
     display:flex;
     align-items: center;
     justify-content: center;
+    gap: 150px;
+    margin: 50px;
 }
 .text{
     font-size: 20px;
     padding-left: 20px;
 }
 .prodimg{
-    width:570px;
-    height:570px;
-    
+    width:350px;
+    object-fit: contain;
+    object-position: center;
+}
+.prodimg img{
+    width:350px;
+    object-fit: contain;
+    object-position: center;
 }
 .col-2{
     max-width: 100%;
     max-height: 100%;
-    padding-left: 8em;
-    padding-top: 8em;
+
 }
 .btn{
     border:1px solid black;
