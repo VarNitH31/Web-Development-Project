@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPI Payment</title>
+    <link rel="stylesheet" type="text/css" href="paymentmode.css">
+</head>
+
+<body>
+    <div class="payment-details-container">
+        <h2>UPI Payment</h2>
+
+        <form id="payment-form">
+         
+            <label for="upiId">UPI ID:</label>
+            <input type="text" id="upiId" placeholder="Enter your UPI ID" required>
+
+            <button type="button" onclick="processPayment()">Process Payment</button>
+            <button type="button" style="background-color:red;"onclick="CancelPayment()">Cancel Payment</button>
+        </form>
+    </div>
+    <script>
+        const processPayment=()=>{
+         alert("Order Placed Succesfully");
+         window.location.href="homepage.html"
+        }
+        const CancelPayment=()=>{
+            alert("Payment Cancelled");
+            window.location.href="payment.html"
+        }
+     
+     </script>
+</body>
+
+</html>

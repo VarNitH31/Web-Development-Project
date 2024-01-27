@@ -97,15 +97,16 @@ h2{
     cursor: pointer;
 }
 
-.clearCart{
+.cartbtn{
     display: flex;
     margin: 50px;
+    gap: 20px;
     align-content: center;
     justify-content: right;
 
 }
 
-.clearCart button{
+.clearCart button, .placeorder button{
     width: max-content;
     border: transparent;
     padding: 10px 15px 10px 15px;
@@ -115,8 +116,11 @@ h2{
     border-radius: 20px;
 }
 
-.clearCart button:hover{
+
+.clearCart button:hover,.placeorder button:hover{
     background-color: rgb(42, 42, 239);
+    transform: translateY(-2px);
+   
 }
 
 

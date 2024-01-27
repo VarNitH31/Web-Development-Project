@@ -83,6 +83,7 @@ const addCartToHTML = () => {
             let positionProduct = products.findIndex((value) => value.id == item.product_id);
             let info = products[positionProduct];
             listCartHTML.appendChild(newItem);
+
             newItem.innerHTML = 
             ` <div class="itemdisplay">
             <img src="${info.image}" alt="">

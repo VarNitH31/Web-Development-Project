@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visa Card Payment</title>
+    <link rel="stylesheet" type="text/css" href="paymentmode.css">
+</head>
+
+<body>
+    <div class="payment-details-container">
+        <h2>Visa Card Payment</h2>
+
+        <form id="payment-form">
+        
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" placeholder="Enter your Visa card number" required>
+
+            <label for="expiryDate">Expiry Date:</label>
+            <input type="text" id="expiryDate" placeholder="MM/YY" required>
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" placeholder="Enter CVV" required>
+
+         
+            <label for="visaSecurityCode">Security Code:</label>
+            <input type="text" id="visaSecurityCode" placeholder="Enter Visa security code" required>
+
+            <button type="button" onclick="processPayment()">Process Payment</button>
+            <button type="button" style="background-color:red;"onclick="CancelPayment()">Cancel Payment</button>
+        </form>
+    </div>
+<script>
+   const processPayment=()=>{
+    alert("Order Placed Succesfully");
+    window.location.href="homepage.html"
+   }
+   const CancelPayment=()=>{
+            alert("Payment Cancelled");
+            window.location.href="payment.html"
+        }
+
+</script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="address.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <title>Address</title>
+</head>
+<body>
+
+    <div class="addcontainer">
+        <h2>Please Enter Your Address</h2>
+        <form onSubmit="pay()"  method="post" id="purchaseForm">
+               <div>
+
+                   <label for="fullName">Full Name:</label>
+                   <input type="text" id="fullName" name="fullName" required>
+                </div>           
+              <div>
+
+                  <label for="address">Address:</label>
+                  <textarea id="address" name="address" rows="4" required></textarea>
+                </div>
+              <div>
+
+                  <label for="city">City:</label>
+                  <input type="text" id="city" name="city" required>
+                </div>
+              <div>
+
+                  <label for="zipCode">Zip Code:</label>
+                  <input type="text" id="zipCode" name="zipCode" required>
+                </div>
+              <div>
+               <a href="payment.html"><button type="submit">Pay</button></a> 
+            </div>
+        </form>
+        <a href="cartpage.html"><button class="cancelbtn">Cancel</button></a> 
+    </div>
+<script>
+     
+
+       const pay=()=>{
+        event.preventDefault();
+        window.location.href = 'payment.html';
+       }
+</script>
+</body>
+</html>
