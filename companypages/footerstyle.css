@@ -20,7 +20,7 @@ font-size: 14px;
 padding: 30px  20px;
 }
 
-.footer .footerrow {
+.footer .row {
     width: 100%;
     display: flex;
     align-items: center;
