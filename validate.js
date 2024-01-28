@@ -1,27 +1,37 @@
 document.addEventListener('DOMContentLoaded', function () {
   const signUpForm = document.querySelector('.signup form');
   const loginForm = document.querySelector('.login form');
+  
+ 
+
+
+
 
   signUpForm.addEventListener('submit', function (event) {
+
+    const userName = signUpForm.querySelector('input[name="txt"]').value.trim();
+    const email = signUpForm.querySelector('input[name="email"]').value.trim();
+    const password = signUpForm.querySelector('input[name="pswd"]').value.trim();
+    
     if (!validateSignUpForm()) {
       event.preventDefault();
-      console.log("prevented");
-       // Prevent form submission if validation fails
     } else {
       event.preventDefault();
-      console.log("redirecting")
-      // Redirect to another HTML page
-      window.location.href = "homepage.html"; // Replace 'homepage.html' with the actual URL
+      window.location.href = "homepage.html";
+
     }
   });     
 
   loginForm.addEventListener('submit', function (event) {
     if (!validateLoginForm()) {
-      event.preventDefault(); // Prevent form submission if validation fails
+      event.preventDefault();
     } else {
-      // Redirect to another HTML page
+   
       event.preventDefault(); 
-      window.location.href = "homepage.html"; // Replace 'homepage.html' with the actual URL
+      console.log("valid check")
+      fileWriter.readAndAppend(formData, 'Signup.txt');
+      console.log("appended");
+      window.location.href = "homepage.html"; 
     }
   });
 
@@ -35,7 +45,6 @@ document.addEventListener('DOMContentLoaded', function () {
       return false;
     }
 
-    // Validate password format
     if (!isPasswordValid(password)) {
       alert('Password must contain at least one symbol, one number, one capital letter, and be at least 8 characters long');
       return false;
@@ -58,8 +67,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 
-    // Add more validation logic if needed
-
     return true;
   }
 
@@ -68,10 +75,33 @@ document.addEventListener('DOMContentLoaded', function () {
     const passwordRegex = /^(?=.*[!@#$%^&*()_+{}\[\]:;<>,.?~\\-])(?=.*\d)(?=.*[A-Z]).{8,}$/;
     return passwordRegex.test(password);
   }
+
+
 });
 
 function checked() {
 let chk = document.querySelector("#chk");
 chk.checked = true;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
